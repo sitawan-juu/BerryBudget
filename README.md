@@ -1,6 +1,6 @@
 # 💰 BERRYBUDGET
 
-**SugarLogic** is an intuitive, data-driven financial ecosystem built with Python. It transforms raw financial data into actionable insights, helping users bridge the gap between simple bookkeeping and professional-grade financial analysis.
+**Berrybudget** is an intuitive, data-driven financial ecosystem built with Python. It transforms raw financial data into actionable insights, helping users bridge the gap between simple bookkeeping and professional-grade financial analysis.
 
 ---
 
