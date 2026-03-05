@@ -40,4 +40,4 @@ At the heart of SugarLogic lies the **Pandas** processing engine. It handles:
 * Pandas (Data manipulation)
 * Matplotlib (Visualization)
 * Install" python -m pip install pandas matplotlib openpyxl "
-* Install" python -m pip install openpyxl "
+
