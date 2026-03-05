@@ -39,3 +39,4 @@ At the heart of SugarLogic lies the **Pandas** processing engine. It handles:
 * Python 3.8+
 * Pandas (Data manipulation)
 * Matplotlib (Visualization)
+* Install" pip install pandas matplotlib "
