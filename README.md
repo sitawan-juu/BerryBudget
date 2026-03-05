@@ -39,9 +39,3 @@ At the heart of SugarLogic lies the **Pandas** processing engine. It handles:
 * Python 3.8+
 * Pandas (Data manipulation)
 * Matplotlib (Visualization)
-
-### Quick Start
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/sugar-logic.git](https://github.com/yourusername/sugar-logic.git)
-   cd sugar-logic
