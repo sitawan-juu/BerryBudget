@@ -1,42 +1,37 @@
 # 💰 BERRYBUDGET
 
-**Berrybudget** is an intuitive, data-driven financial ecosystem built with Python. It transforms raw financial data into actionable insights, helping users bridge the gap between simple bookkeeping and professional-grade financial analysis.
+**Berrybudget** คือระบบนิเวศทางการเงินที่ขับเคลื่อนด้วยข้อมูล พัฒนาขึ้นด้วยภาษา Python โดยเปลี่ยนข้อมูลธุรกรรมดิบให้กลายเป็นข้อมูลเชิงลึกที่นำไปใช้งานได้จริง ช่วยให้ผู้ใช้ยกระดับจากการทำบัญชีทั่วไปสู่การวิเคราะห์ทางการเงินระดับมืออาชีพ
 
 ---
 
-## 🌟 Key Features
+## 🌟 ฟีเจอร์หลัก (Key Features)
 
-* **🌸 Seamless Transaction Logging:** Effortlessly record income and expenses with automated timestamps and metadata validation.
-* **📊 Smart Analytical Processing:** Leveraging the **Pandas** library for high-speed data aggregation, real-time balance tracking, and structured reporting.
-* **📈 Dynamic Data Visualization:** Generates aesthetic, pastel-themed bar charts via **Matplotlib** to visualize the gap between inflows and outflows.
-* **💾 Enterprise-Grade Persistence:** Automatically synchronizes local data to an Excel-friendly CSV (`money_data.csv`) using `utf-8-sig` encoding for universal compatibility.
-* **🔙 Instant Undo System:** A built-in safety mechanism allowing users to revert the last transaction and maintain data integrity.
-
----
-
-## 🛠️ Technical Architecture
-
-The system is designed with a **three-tier logic architecture** to ensure modularity and scalability:
-
-### 1. Data Acquisition Layer
-Responsible for sanitizing user inputs. It ensures that only valid numerical values and defined categories (Income/Expense) are committed to the data stream.
-
-### 2. Computational Layer (The Pandas Engine)
-At the heart of SugarLogic lies the **Pandas** processing engine. It handles:
-* **Aggregation:** Real-time summation of distinct financial types.
-* **Net-worth Calculation:** Dynamic calculation of `Income - Expenses`.
-* **DataFrame Conversion:** Transforming raw dictionaries into structured data for advanced analysis.
-
-### 3. Visualization & UI Layer
-* **Visuals:** Uses **Matplotlib** with custom style sheets and font-patching (Tahoma/Arial) for a consistent cross-platform UI.
-* **CLI:** An interactive Command-Line Interface designed for speed and ease of use.
+* **🌸 Seamless Transaction Logging:** บันทึกรายรับและรายจ่ายได้อย่างง่ายดาย พร้อมระบบ Timestamp อัตโนมัติและการตรวจสอบความถูกต้องของข้อมูล (Metadata Validation)
+* **📊 Smart Analytical Processing:** ใช้ไลบรารี **Pandas** เพื่อการประมวลผลข้อมูลความเร็วสูง ติดตามยอดคงเหลือแบบเรียลไทม์ และออกรายงานที่มีโครงสร้างชัดเจน
+* **📈 Dynamic Data Visualization:** สร้างแผนภูมิแท่งโทนสีพาสเทลที่สวยงามผ่าน **Matplotlib** เพื่อแสดงส่วนต่างระหว่างรายรับและรายจ่าย
+* **💾 Enterprise-Grade Persistence:** ซิงค์ข้อมูลลงไฟล์ CSV (`money_data.csv`) อัตโนมัติ โดยใช้การเข้ารหัส `utf-8-sig` เพื่อให้เปิดใช้งานกับ Excel ได้อย่างไร้รอยต่อ
+* **🔙 Instant Undo System:** ระบบความปลอดภัยที่ช่วยให้ผู้ใช้ย้อนกลับ (Undo) รายการล่าสุดได้ทันที เพื่อรักษาความถูกต้องของข้อมูล
 
 ---
 
-## 🚀 Installation & Setup
+## 🛠️ สถาปัตยกรรมทางเทคนิค (Technical Architecture)
 
-### Prerequisites
-* Python 3.8+
-* Pandas (Data manipulation)
-* Matplotlib (Visualization)
+ระบบถูกออกแบบด้วยโครงสร้าง **Three-tier Logic** เพื่อความง่ายในการขยายระบบ:
 
+1.  **Data Acquisition Layer:** ทำหน้าที่คัดกรองข้อมูล (Sanitizing) เพื่อให้มั่นใจว่าเฉพาะค่าตัวเลขและหมวดหมู่ที่ถูกต้องเท่านั้นที่จะถูกบันทึก
+2.  **Computational Layer (The Pandas Engine):** หัวใจหลักของระบบที่ใช้ Pandas ในการคำนวณยอดรวม (Aggregation) และคำนวณมูลค่าสุทธิ (Net-worth) แบบเรียลไทม์
+3.  **Visualization & UI Layer:** แสดงผลกราฟผ่าน Matplotlib ที่ปรับแต่งฟอนต์ (Tahoma/Arial) ให้สวยงาม และใช้งานผ่าน Interactive CLI
+
+---
+
+## 🚀 การติดตั้งและใช้งาน (Installation)
+
+### สิ่งที่ต้องมีก่อน (Prerequisites)
+* **Python 3.8+**
+* **Pandas** (สำหรับจัดการข้อมูล)
+* **Matplotlib** (สำหรับสร้างแผนภูมิภาพ)
+
+### วิธีการติดตั้ง
+ติดตั้งไลบรารีที่จำเป็นผ่าน Terminal หรือ Command Prompt:
+```bash
+pip install pandas matplotlib
